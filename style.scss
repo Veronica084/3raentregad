@@ -1,209 +1,278 @@
 *{
     padding: 0;
-    margin: 0 ;
+    margin: 0 ;}
 
-    }
-
-/*variables*/
-    $primary-color: rgba(228, 222, 215, 0.873);
-    $secondary-color: rgb(246, 246, 239);
-    
-    $background-color: rgb(241, 227, 227);
-    $background-color1: rgb(229, 229, 243);
-
-
+   /*variables*/
+         $primary-color: rgba(228, 222, 215, 0.873);
+         $secondary-color: rgb(246, 246, 239);
+         $background-color: rgb(241, 227, 227);
+         $background-color1: rgb(229, 229, 243);
     /*BODY*/
     body {text-align: center;
-      justify-content: center;
-     header{
-      text-align: center;
-      justify-content: center;
-    padding: 0.5px;
-    font-size: 13px;
-  background-color:$background-color;}
-  
-  }
-  header a:hover{
-    text-decoration: overline;
-  }
-    
-    .d-img{
-    width: 500px;
-    height: 400px;
-    
+         justify-content: center;
+         margin: 0 auto;
 
-    a{
-      color:white;
-     background-color: rgba(244, 165, 29, 0.456);
-     border: 1px solid rgb(0, 0, 0);
-     border-radius: 10px;
-    text-decoration: underline;}}
+    header{text-align: center;
+         justify-content: center;
+         padding: 0.5px;
+         font-size: 13px;
+         background-color:$background-color;
+        }
+      }
 
-    h5{
-      font-size: 20px;
+  header a:hover{text-decoration: overline;}
+
+    .d-img{width: 500px;
+       height: 400px;
+
+      a{color:white;
+       background-color: rgba(244, 29, 151, 0.456);
+       border: 1px solid rgb(0, 0, 0);
+       border-radius: 10px;
+      }
     }
+
+    h5{font-size: 20px;}
+    
+     footer{
+          background-color: rgb(153, 244, 244);}
 
 
   /*media query para tabletas*/
-
    @media (min-width:600px){
-    header{
-      font-size: 18px;
-      padding: 20px;}}
-
-      h5{
-        font-size: 30px;
+     header{font-size: 18px;
+       padding: 20px;
       }
+      
+      .grid-container{display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+       grid-auto-rows: 300px;
+       gap: 40px;
+      }
+    }
 
-   /*media query para computadora*/
-   @media (min-width:1024px) {
-    header{
-      font-size: 20px;
-      padding: 30px;
+      h5{font-size: 30px;}
+
+     /*media query para computadora*/
+
+     @media (min-width:1024px) {
+      header{font-size: 20px;
+       padding: 30px;
+
       .d-img{
         width: 30%;
         height: 20%;
       }
     }
-    .textual{
-      font-size: 30px;
 
-    }
-    .textual-{
-      font-size: 30px;
-    }
-    p{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    h5{
-      font-size: 50px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+    .textual{font-size: 30px;}
+
+    .textual-{font-size: 30px;}
+
+    p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+  h5{font-size: 50px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    }
 
+    a{font-size: medium;
+       color:rgb(0, 0, 0);
+       background-color: rgb(220, 60, 116);
+       border: 1px solid rgb(0, 0, 0);
+       border-radius: 10px;}
+     a:link{color:#a3a3a3}
+     a:visited{color:#b8b8b8}
 
-
-    a{
-      color:white;
-     background-color: rgba(244, 165, 29, 0.456);
-     border: 1px solid rgb(0, 0, 0);
-     border-radius: 10px;
-    text-decoration: underline;}
-
-
-
-/*mixin*/
+    /*mixin*/
     @mixin centrado {
          text-align: center;
-        margin: 0 auto;
-        width: 50%;
-    }
+         margin: 0 auto;
+         width: 50%;}
   
     /*HEADER*/
     
-    
     /*MAIN*/
-    main{background-color: $background-color1;}
+  main{background-color: $background-color1;
+        text-align: center;
+
+    section{
+  h2{text-align: center;
+  }
+}
+}
     .cards{display: flex;
-    flex-flow: wrap;
-    padding: 20px;
-    margin: 10px;
-    gap: 10px;
- 
-    .card{
-      color: #000;
-      
-    border-radius: 20px;
+        flex-flow: wrap;
+        padding: 20px;
+        margin: 10px;
+        gap: 10px;
+    .card{color: #000;
+        border-radius: 20px;
+
       &:hover{
         color: rgb(28, 85, 135);
-        background-color: $secondary-color;
-        
-      }
-    }
-  }
+        background-color: $secondary-color;}}}
 
-  .card-body{
-   padding: 10px;
-  }
-  .btn btn-primary{
-    color: none;
-  }
+    .card-body{padding: 10px;}
 
-    /*página1*/
-    
-     .header-p1{background: linear-gradient(90deg,rgb(181, 222, 181) 4%, rgb(83, 155, 207)
+    .btn btn-primary{color: none;}
+
+    /*página turismo extremo*/
+     .header-p1{background: linear-gradient(90deg,rgb(78, 182, 180) 4%, rgb(207, 83, 203)
       58%, rgb(150, 169, 173)
        100%);
-       padding: 1.5rem 0;
-      }
-    .header-p1{
-      padding: 10px;
-      margin: 1.5rem;
+       padding: 1.5rem 0;}
 
-    }
+    .header-p1{
+        padding: 0.5px;
+        margin: 1rem;}
+
+    .navbar1 ul{
+        list-style-type: none;
+        background-color: #519592;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+    .navbar1 a{color: white;
+        text-decoration: none;
+        padding: 1px;
+        display:block;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: 0.5px;
+      }
+
+      .navbar1 a:hover{background: linear-gradient(90deg,rgb(121, 212, 121) 4%, rgb(74, 147, 199)
+      58%, rgb(150, 169, 173)
+       100%);
+      }
+       
+
+        
+     @media (min-width:768px){
+      .navbar1{flex-direction: row;
+         justify-content: space-between;
+        }
+      .navbar1 a{background-color: rgb(50, 155, 139);
+         text-decoration: none;
+         padding: 0.5px;
+         border: #a3a3a3;
+         border-radius: 3px;
+         font-family: 'Times New Roman', Times, serif;
+         box-shadow: 8%;
+        }
+      }
  
-    
     .grid-container{
-      width: 90%;
-      max-width: 1100px;
-      margin: 40px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      grid-auto-rows: 200px;
-      gap: 40px;
-    }
+         width: 90%;
+         max-width: 1000px;
+         margin: 40px auto;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+         grid-auto-rows: 200px;
+         gap: 40px;
+         text-align: center;  
+         align-items: center;
+         align-content: center;
+        }
 
     .grid-item{
-      background-color: rgba(225, 224, 220, 0.59);
-      border: 1px solid black;
-      padding: 20px;
-      text-align: center;  
-    }
-/*transform*/
+         background-color: rgba(225, 224, 220, 0.59);
+         border: 1px solid black;
+         padding: 0.5px;
+         text-align: center;  
+         align-items: center;
+         align-content: center;
+         border-radius: 8px;
+        }
+    
+    /*transform*/
     .grid-item:hover{
-      transform: rotateX(360deg);
-      transition: 2s;
-    }
-
+        transform: rotateX(360deg);
+        transition: 2s;
+      }
 
     .grid-item p{
-      font-size: 10px;
-    }
+        font-size: 13px;
+        font-family: cursive;
+        box-shadow: 10px 10px 3px 2px rgba 220,20 116;
+      }
+
     /*media query para computadora*/
-
-    @media (min-width:1024px){
-
-      
+     @media (min-width:1024px){
        .header-p1{
-        text-align: center;
-        justify-content: center;
-        .parrafo{@include centrado()
+          justify-items: auto;
+          text-align: center;
+          justify-content: center;
+       .parrafo{@include centrado()
+      }
+    }
         
+      .grid-container{display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+         grid-auto-rows: 200px;
+         gap: 40px;
         }
-       }
+      }
 
       
-    }
-    
-   footer{
-    background-color: rgb(153, 244, 244);
-    
-
-   }
-     /*fin de página1*/
-    /*FOOTER página principal*/
-    footer{
-  
-    }
-    .icon-item{
-     text-align: center;
-      justify-content: center;
-      background-color: rgb(165, 253, 253);
+      
+      /*fin de página turismo extremo*/
+      /*FOOTER página principal*/
+     .icon-item{
+           text-align: center;
+           justify-content: center;
+           background-color: rgb(165, 253, 253);
            height: 10%;
-      width: 100%;
-
-    }
-    
+           width: 100%;}
     
     /**/
+
+        ul{
+            text-decoration: none;
+           list-style: none;}
+  
+   h2{text-align: center;
+  font-family: cursive;}
+
+       /*Background imagenes*/
+    .main1{
+          background-image: url(./targentina/SALTA.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;}
+
+    .main2{background-image: url(./targentina/ruinasJ1.jpeg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;}
+
+    .main3{background-image: url(./targentina/cataratas.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;}
+
+    .main4{background-image: url(./targentina/caminito.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;}
+
+        .texin{
+          font-family: cursive;}
+
+     
+    
+   
+      
+      
+
+       
